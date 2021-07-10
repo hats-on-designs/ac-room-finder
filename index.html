@@ -1,64 +1,236 @@
-<!DOCTYPE html>
-<html lang="en">
-
+  <!doctype html>
+<html lang="en-CA">
 <head>
-    <title>AC-Room Finder</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Algonquin college - Room finder ">
-    <meta name="keywords" content="Room finder, find, locate, classroom, room search, room features, room amenities">
-    <meta name="author" content="Hats-On-Designs">
+<meta name="msvalidate.01" content="4794D0B691928025992CFE0E1258F8BF" />
+        
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <script src="//cdn.optimizely.com/js/195772337.js"></script>
+    <meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"ece5fb2a2c",applicationID:"122183163"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){d("pageHide",[p.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1209.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>  Algonquin College</title>
 
-    <!--    Reset.CSS-->
-    <link rel="stylesheet" href="css/reset.css">
+     <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s7494.pcdn.co\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.18"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])?!1:!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55358,56760,9792,65039],[55358,56760,8203,9792,65039])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
 
-    <!--        ROBOTO - Google Font style sheet-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
-    <!--         Room-Finder style sheet-->
-    <link rel="stylesheet" href="css/styles.css">
-
+<link rel='stylesheet' id='normalize-css'  href='https://s7494.pcdn.co/wp-content/themes/ac-2017/css/normalize.css?ver=2.1.2' type='text/css' media='1' />
+<link rel='stylesheet' id='main-css'  href='https://s7494.pcdn.co/wp-content/themes/ac-2017/css/main.css?ver=4.9.18' type='text/css' media='all' />
+<link rel='stylesheet' id='events-list-css'  href='https://s7494.pcdn.co/wp-content/themes/ac-2017/css/events-list.css?ver=4.9.18' type='text/css' media='all' />
+<link rel='stylesheet' id='ac-cookie-noticestyle-css'  href='https://s7494.pcdn.co/wp-content/plugins/ac-cookie-notice//style.css?ver=1580754322' type='text/css' media='all' />
+<link rel='stylesheet' id='ac-metaslider-customisation-public-style-css'  href='https://s7494.pcdn.co/wp-content/plugins/ac-metaslider-customisation/public.css?ver=4.9.18' type='text/css' media='all' property='stylesheet' />
+<link rel='stylesheet' id='acmf-public-styles-css'  href='https://s7494.pcdn.co/wp-content/plugins/ac-marketo-forms/public/css/public.css?ver=1623849626' type='text/css' media='all' />
+<link rel='stylesheet' id='acmf-widget-styles-css'  href='https://s7494.pcdn.co/wp-content/plugins/ac-marketo-forms/widgets/css/styles.css?ver=2.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='acsmf-widget-styles-css'  href='https://s7494.pcdn.co/wp-content/plugins/ac-social-media-feed/widgets/css/widget.css?ver=1619448099' type='text/css' media='all' />
+<link rel='stylesheet' id='ac-page-builder-icons-css'  href='https://s7494.pcdn.co/wp-content/plugins/alg-page-builder-widgets/css/icons-font.css?ver=4.9.18' type='text/css' media='all' />
+<link rel='stylesheet' id='ac-page-builder-grid-system-styles-css'  href='https://s7494.pcdn.co/wp-content/plugins/alg-page-builder-widgets/css/alg-grid.css?ver=4.9.18' type='text/css' media='all' />
+<link rel='stylesheet' id='ac-page-builder-general-styles-css'  href='https://s7494.pcdn.co/wp-content/plugins/alg-page-builder-widgets/css/ac-page-builder-widget-general.css?ver=4.9.18' type='text/css' media='all' />
+<link rel='stylesheet' id='gotham-font-styles-prod-css'  href='https://www.algonquincollege.com/fonts/658122/17159C1E5091DE2C4.css?ver=4.9.18' type='text/css' media='all' />
+<link rel='stylesheet' id='accc-rotation-widget-css-css'  href='https://s7494.pcdn.co/wp-content/plugins/alg-contact-cards/widgets//css/contact-card-rotation-widget.css?ver=4.9.18' type='text/css' media='all' />
+<script type='text/javascript' src='https://s7494.pcdn.co/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://s7494.pcdn.co/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://s7494.pcdn.co/wp-content/themes/ac-2017/js/modernizr.js?ver=2.6.2'></script>
+<script type='text/javascript' src='https://s7494.pcdn.co/wp-content/plugins/ac-cookie-notice//script.js?ver=1574705499'></script>
+<script type='text/javascript' src='https://s7494.pcdn.co/wp-content/plugins/ac-metaslider-customisation/public.js?ver=1620917320'></script>
+<script type='text/javascript' src='https://s7494.pcdn.co/wp-content/plugins/ac-marketo-forms/public/js/marketo-submit.js?ver=1623849627'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var acmf_marketo_form_json = {"site_url":"https:\/\/www.algonquincollege.com","site_path":null,"token":"123","form_cache":"1","form_cache_off_exp":"10 Jun 2021 16:00 GMT -0500"};
+var ACMF_MARKETO_FORM_JSON = {"site_url":"https:\/\/www.algonquincollege.com","site_path":null,"token":"123","form_cache":"1","form_cache_off_exp":"10 Jun 2021 16:00 GMT -0500"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s7494.pcdn.co/wp-content/plugins/ac-marketo-forms/public/js/marketo-form.js?ver=1623849627'></script>
+<script type='text/javascript' src='https://s7494.pcdn.co/wp-content/plugins/ac-marketo-forms/widgets/js/scripts.js?ver=2.0.0'></script>
+<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js?ver=4.9.18'></script>
+<script type='text/javascript' src='https://s7494.pcdn.co/wp-content/plugins/alg-page-builder-widgets/js/ac-page-builder-widgets-general-script.js?ver=4.9.18'></script>
+<link rel='https://api.w.org/' href='https://www.algonquincollege.com/wp-json/' />
+<link rel="canonical" href="https://www.algonquincollege.com/" />
+<link rel='shortlink' href='https://www.algonquincollege.com/' />
+<link rel="alternate" type="application/json+oembed" href="https://www.algonquincollege.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.algonquincollege.com%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.algonquincollege.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.algonquincollege.com%2F&#038;format=xml" />
+	
 </head>
 
-<body>
-    
-     <!-- HEADER -->
-    <header>
-        <!-- The screen shots is here only for demonstration at the final project - devlopers will have to add the COPIED CODE For Algonquin College header -->
-        <img src="images/header-screen-shot-mobile.jpg" alt="header-screen-shot-mobile">
-        <!-- <img src="images/header-screen-shot-desktop.jpg" alt="header-screen-shot-desktop"> -->
-    </header>
-   
-    <main class="container">
-        <article>
-            <section class="hero-image">
-                <section class="hero-title">
-                    <h1>Welcome to Room Finder </h1>
-                </section>
-            </section>
-            <section class="status">
-                <h2>Are you a</h2>
-                <section class="landing-btn">
-                    <a href="#" target="_self">Student</a>
-                    <a href="#" target="_self">Staff Member</a>
-                </section>
-            </section>
-            <hr>
-            <section class="content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                    of type and scrambled it to make a type specimen book. </p>
-            </section>
-        </article>
-    </main>
+<body class="home page-template page-template-template-home-2017 page-template-template-home-2017-php page page-id-5" id="home-2017">
 
-    <footer>
-        <!-- The screen shots is here only for demonstration at the final project - devlopers will have to add the COPIED CODE For Algonquin College footer -->
-       <img src="images/footer-screen-shot-mobile.jpg" alt="footer-screen-shot-mobile">
-   </footer>
-   
-</body>
-</html>
+<div id="page" class="hfeed site">
+    
+    <header>
+        <a id="skip-to-content" href="#content-wrapper">Skip to content (Press ENTER)</a>
+
+
+                
+<!-- Google Tag Manager (noscript)  -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-57R3FZ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Google Tag Manager (noscript) 2 -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3G5ZQT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) 2 -->
+
+
+        <div class="inner-header">
+            <div class="logo-container">
+                <a href="https://www.algonquincollege.com/" title="Algonquin College" rel="home">
+                    <span class="visuallyhidden">Home page</span>
+                    <i class="icon-algonquin" tabindex="0"></i>
+                </a>
+            </div>
+            <div class="mobile-nav-toggle" id="mobile-nav-toggle"><i class="icon-menu"></i></div>
+
+            <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile version menu">
+              
+
+
+
+
+    
+<div class='cse-search-box global-search search-form'><gcse:searchbox-only enableAutoComplete='true'  resultsUrl='/search/?cx=002179760531728369470%3Aecn4eupdfpm&cof=FORID%3A11&ie=UTF-8&q=' ></gcse:searchbox-only></div>                <ul class="mobile-sub-nav">
+                <li><a href="/a-z/">Site Index</a></li>
+                <li><a href="/maps/">Maps</a></li>
+                </ul>
+                  
+                <ul class="mobile-global-nav">
+                    <li class="heading active"><a href="/">Ottawa</a></li>
+                    <li><div class="menu-main-menu-container"><ul id="menu-main-menu" class="main-nav-list"><li id="menu-item-286" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-286"><a href="/future-students/">Future Students</a></li>
+<li id="menu-item-2689" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2689"><a href="https://www.algonquincollege.com/current-students/">Current Students</a></li>
+<li id="menu-item-530" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-530"><a href="/employees/">Employees</a></li>
+<li id="menu-item-224" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-224"><a href="/international/">International Students</a></li>
+<li id="menu-item-299" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-299"><a href="/future-students/programs/">Programs</a></li>
+<li id="menu-item-1215" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1215"><a href="/financial-aid/">Financial Aid</a></li>
+<li id="menu-item-438" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-438"><a href="https://www.algonquincollege.com/giving-alumni/">Alumni | Giving</a></li>
+<li id="menu-item-306" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306"><a href="https://www.algonquincollege.com/about/">About</a></li>
+<li><a class="toggleSearch" title="Open the site search input box." href="#"><i class="icon-search"><span class="hiddenToggleText">Search</span></i></a></li></ul></div>                    </li>
+                    <li class="heading"><a href="/pembroke/">Pembroke</a></li>
+                    <li class="heading"><a href="/perth/">Perth</a></li>
+                    <li class="heading"><a href="/online/">Online</a></li>
+                    <li class="heading"><a href="/intl-campuses/">International Campuses</a></li>
+                </ul>
+            </nav>
+
+            <!-- begin hidden search form -->
+            <div id="searchForm">
+                <nav aria-label="Site search menu">
+                    <ul>
+                        <li><a href="/a-z/">Site Index</a></li>
+                        <li><a href="/maps/">Maps</a></li>
+                                                <!-- <li><a href="/phonebook/">Phonebook</a></li> -->
+                    </ul>
+                </nav>
+
+                
+    
+<div class='cse-search-box global-search search-form'><gcse:searchbox-only enableAutoComplete='true'  resultsUrl='/search/?cx=002179760531728369470%3Aecn4eupdfpm&cof=FORID%3A11&ie=UTF-8&q=' ></gcse:searchbox-only></div>                <label for="close" class="visuallyhidden">Close search box</label>
+                <button id="close" title="Close search box"><i class="icon-fnt_arrow_up_small"></i></button> 
+            </div>
+            <!-- /hidden search form-->
+
+            <div class="actions-container">
+                                <nav class="campus-nav" aria-label="Campus menu">
+                      <ul id="menu-locations" class="menu"><li id="menu-item-305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5 current_page_item menu-item-305"><a title="Algonquin College Home &#8211; Ottawa Campus" href="https://www.algonquincollege.com/">Ottawa</a></li>
+<li id="menu-item-278" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-278"><a href="/pembroke/">Pembroke</a></li>
+<li id="menu-item-277" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-277"><a href="/perth/">Perth</a></li>
+<li id="menu-item-279" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-279"><a href="/online/">Online</a></li>
+<li id="menu-item-358" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-358"><a href="/intl-campuses/">Int&#8217;l Campuses</a></li>
+</ul>                </nav>
+            </div>
+        </div><!-- /.inner-header -->
+        <div class="global-nav">
+            <nav aria-label="Main menu">
+                <div class="menu-main-menu-container"><ul id="menu-main-menu-1" class="main-nav-list"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-286"><a href="/future-students/">Future Students</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2689"><a href="https://www.algonquincollege.com/current-students/">Current Students</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-530"><a href="/employees/">Employees</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-224"><a href="/international/">International Students</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-299"><a href="/future-students/programs/">Programs</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1215"><a href="/financial-aid/">Financial Aid</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-438"><a href="https://www.algonquincollege.com/giving-alumni/">Alumni | Giving</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-306"><a href="https://www.algonquincollege.com/about/">About</a></li>
+<li><a class="toggleSearch" title="Open the site search input box." href="#"><i class="icon-search"><span class="hiddenToggleText">Search</span></i></a></li></ul></div>            </nav>
+        </div>
+    </header>
+<main id="topContent">
+
+                <div class="tickerWrapper-infinite-loop" title="COVID-19 Update: Click here for the latest updates on campus operations and services, and campus access details.">
+                <div class="tickerMessageAnimationWrapper">
+				  <div class="tickerMessage" >
+		     				 
+                 
+					  <h2><a href='https://www.algonquincollege.com/coronavirus/'>COVID-19 Update: Click here for the latest updates on campus operations and services, and campus access details.</a></h2>					</div>
+			  </div>
+		  </div>
+		  
+
+<h1 class="visuallyhidden">Algonquin College</h1>
+
+	
+</main>
+
+	<footer id="colophon" class="site-footer">
+		<div class="inside">
+
+            <div id="leftLogo">
+                <i class="icon-algonquin ac-logo-inverted"></i>
+            </div>
+          
+            <div id="logoRight">
+                                            </div>
+            
+		    <div id="schools">
+
+				<address>
+					<strong>Ottawa</strong><br/>
+					1385 Woodroffe Avenue<br/>
+					Ottawa, Ontario K2G 1V8<br/>
+					<a href="tel:6137274723">613-727-4723</a>
+				</address>
+
+				<address>
+					<strong>Pembroke</strong><br/>
+					1 College Way<br/>
+					Pembroke, Ontario K8A 0C8<br/>
+					<a href="tel:6137354700">613-735-4700</a>
+				</address>
+
+				<address>
+					<strong>Perth</strong><br/>
+					7 Craig Street<br/>
+					Perth, Ontario K7H 1X7<br/>
+					<a href="tel:6132672859">613-267-2859</a>
+				</address>
+
+			</div>
+
+			<ul class="copyright horizontalList">
+				<li>&copy;2021 Algonquin College of Applied Arts and Technology</li>
+                <li><a href="/acmarketing/website-feedback/" class="leftEdgeOfList">Website Feedback </a>&nbsp;&nbsp;</li>
+               <li>&nbsp;&nbsp; <a href="/policies/privacy/">Privacy Statement</a></li>
+			</ul>
+		</div>
+	</footer>
+
+
+<div class="js-scroll-top">
+	<i class="icon-fnt_arrow_up_small"></i>
+</div>
+
+
