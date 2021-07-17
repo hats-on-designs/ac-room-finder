@@ -135,7 +135,7 @@ svg{
     height: 5rem;
     background-color: #333333;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
    
     margin-bottom: 1.6em;
@@ -267,24 +267,22 @@ svg{
  
 }
 
-.room-number-search h2{ 
+.room-number-search form label{ 
    font-size:1.62rem ;
    font-weight:700;
    color:#006341;
-
-   margin-bottom: 2rem;
 }
 
 
 .room-number-search form input{
     width:100%;
     font-size: 1.2rem;
-    font-style: italic;
 
-    color:#595959;
+    color:#333333;
     background-color: #e5efec;
     border: 1px solid #006341;
 
+    margin-top: 2rem;
     margin-bottom: 1.8rem;
     padding:1.6rem 2rem 1.75rem 1.3rem;
 }
@@ -296,7 +294,7 @@ svg{
     font-size: 1.25rem;
     font-weight: 500;
 
-    color:#FFFFFF;
+    color:#ffffff;
     background:#006341;
     border: none;
     
@@ -340,12 +338,11 @@ svg{
 }
 
 
-.room-filter-search h1 {  
+.room-filter-search form label {  
     font-size: 1.62rem;
     font-weight: 500;
-    color:#FFFFFF;
+    color:#ffffff;
 
-   
     margin-bottom: 2.25rem;
    
 }
@@ -364,6 +361,9 @@ svg{
 
 }
 
+.room-filter-search form select:first-of-type{
+    margin-top: 2rem;
+}
 
 /* .room-filter-search form select option{
     color: #ffffff;
