@@ -108,9 +108,10 @@
 
             <!-- Room number search section -->
             <section class="room-number-search">
-                <h2>Know your room number?</h2>
+                
                 <form action="" method="">
-                    <input type="text" placeholder="Example CA101" name="search">
+                    <label for="room-number">Know your room number?</label>
+                    <input type="text" id="room-number" placeholder="Example CA101" name="room-number">
                     <button type="submit">
                         <a href="results-page.html">
                             Locate
@@ -130,11 +131,10 @@
 
             <!-- Search Section with filter options -->
             <section class="room-filter-search">
-                <h1 >Find the room based on your needs</h1>
-
-                <form action="" method="" class="container">
-
-                        <select class="filter-category item">
+                
+                <form action="" method="">
+                    <label for="">Find the room based on your needs</label>
+                        <select id="category" name="category">
                             <option selected disabled hidden >Category</option>
                             <option value="Lecture">Lecture</option>
                             <option value="Collaborative">Collaborative</option>
@@ -142,7 +142,7 @@
                             <option value="Studio">Studio</option>
                         </select>
                     
-                        <select class="filter-capacity item">
+                        <select id="capacity" name="capacity" >
                             <option class="capacity" selected disabled hidden>Capacity</option>
                             <option value="12">12 Seats</option>
                             <option value="20">20 Seats</option>
@@ -152,7 +152,7 @@
                             <option value="40">40 Seats</option>
                         </select>
 
-                        <select class="filter-whiteboards item">
+                        <select id="whiteboards" name="whiteboards">
                             <option selected disabled hidden>Whiteboards</option>
                             <option value="1">1 Whiteboard</option>
                             <option value="2">2 Whiteboards</option>
@@ -161,7 +161,7 @@
                             <option value="5">5 Whiteboards</option>
                         </select>
 
-                        <select class="filter-outlets item">
+                        <select id="outlets" name="outlets" >
                             <option selected disabled hidden>Outlets</option>
                             <option value="06">06 Outlets</option>
                             <option value="10">10 Outlets</option>
@@ -427,7 +427,7 @@
 
     <!-- accordion (room detail dropdown) - script -->
     <script src="../js/accordion.js"></script>
-    
+
 </body>
 
 </html>
