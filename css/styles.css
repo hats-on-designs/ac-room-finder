@@ -5,16 +5,19 @@ color sheme:
         Algonquin Green:                #006341;
         Jet (from algonquin website)    #333333;
         Grey (from algonquin website)   #707070;
+        Algonquin Green @10% TINT:     #e5efec;
         title background-color:         rgba(0, 99, 65, 0.7);
 
         White:                          #ffffff;         
 
 
-    Font: Heading ????   : Roboto 
+    Font: Heading  : Roboto 700;
+                            font-family: roboto, arial narow, arial, sans-serif;
+            button : Roboto 600;
                             font-family: roboto, arial narow, arial, sans-serif;
 
-*/
 
+*/
 
 
 
@@ -50,53 +53,117 @@ svg{
     width: 3.93rem;
 }
 
-/* Login-Page */
-
-.hero img{
-    position: relative;
-}
-
-.hero h1{
-    font-size: 2.37rem;
-    font-weight: 500;
-    line-height: 3.12rem;
-    text-align: center;
-
-    margin: 1rem;
-    padding: 2rem 4rem;
-    
-    position: absolute;
-    top: 24.5rem;
-
-    color: #ffffff;
-    background-color:  rgba(0, 99, 65, 0.7);
-    
-}
+/* progress section - circle version - */
 
 .progress{
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr ; 
+    grid-template-rows: 1fr; 
+    margin: 0 auto;
+    align-items: center; 
+    max-width: 85%;
 }
 
 .progress-icon{
     display: inline-block;
-    margin: 1.84rem 1.5rem 1.84rem 1.84rem;
+    margin: 2rem 1.3rem 2rem 0.5rem;
     grid-column: 1/2;
-    grid-row: 1/4;
 
 }
 
 .progress h2{
-    font-size: 1.37rem;
+    font-size: 1.4rem;
     font-weight: 500;
     color: #006341;
-    margin-right: 4rem;
+    grid-column: 2/5;
 
-    grid-column: 2/3;
-    grid-row: 2/3;
+    
+} 
+
+
+/* ---------------Landing PAGE---------------------- */
+
+.hero-section{
+
+    overflow: hidden;
+    background: url(../images/room-finder-hero-img.jpg);
+    background-size: cover;
+    background-position: 50% 80%;
+    background-repeat: no-repeat;
+
 
 }
+
+.hero-section h1{ 
+    font-size: 2.37rem;
+    font-weight: 600;
+    line-height: 3.12rem;
+    text-align: center;
+    
+    color: #ffffff;
+    background-color: rgba(0, 99, 65, 0.7) ;
+    
+    max-width: 24.75rem;
+    padding: 2rem 4rem;
+    margin: 0 auto;
+    margin-top: 15rem;
+    margin-bottom: 3rem; 
+
+}
+
+
+/* landing page buttons */
+.status-section{
+    background-color:#006341 ;
+    padding: 2rem;
+}
+
+.status-section h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    
+}
+
+.status-section a{
+    display: block;
+    font-size: 1.4em;
+    padding: 1.7rem;
+    width: 100%;
+    height: 5rem;
+    background-color: #333333;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+   
+    margin-bottom: 1.6em;
+
+}
+
+.status-section hr{  
+    border: 1px solid #048559;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.intro-about h2{
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+.intro-about p{
+    font-size: 1em;
+    line-height: 1.8rem;
+    color: #ffff;
+    margin-bottom: 1rem;
+}
+
+
+
+/*---------------------- Login-Page ----------------------------*/
+
 
 .login{
     color: #ffffff;
@@ -144,15 +211,16 @@ svg{
     height: 4.5rem;
     font-size: 1.5rem;
     font-weight: 600;
-    color: #ffffff;
     background-color: #333333;
     border: none;
-
 
     margin-bottom: 1rem;
 
 }
-
+.login form button a{
+    text-decoration: none;
+    color: #ffffff;
+}
 
 /*************************************
            FILTER PAGE
@@ -161,203 +229,516 @@ svg{
 
 /* Filter Display Section */
 
-.filter-img {
-    width: 100%;
-    height:auto;
-    position:relative;   
+.search-page-title{
+    overflow: hidden;
+    background: url(../images/room-finder-hero-img.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+}
+
+.search-page-title h1{
+    font-size: 2.37rem;
+    font-weight: 600;
+    line-height: 3.12rem;
+    text-align: center;
+    
+    color: #ffffff;
+    background-color: rgba(0, 99, 65, 0.7) ;
+    
+    max-width: 24.75rem;
+    padding: 1rem 4rem;
+    margin: 0 auto;
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+
 }
 
 
-.filter-page-title{
-    font-weight:500;
-    font-size:1.87rem;
+
+/* Locate Room Section */
+
+
+.room-number-search{
+    background-color: #e5efec;
+    padding:2rem 2rem 5rem 2rem;
+    position: relative;
+ 
+}
+
+.room-number-search h2{ 
+   font-size:1.62rem ;
+   font-weight:700;
+   color:#006341;
+
+   margin-bottom: 2rem;
+}
+
+
+.room-number-search form input{
+    width:100%;
+    font-size: 1.2rem;
+    font-style: italic;
+
+    color:#595959;
+    background-color: #e5efec;
+    border: 1px solid #006341;
+
+    margin-bottom: 1.8rem;
+    padding:1.6rem 2rem 1.75rem 1.3rem;
+}
+
+
+.room-number-search form button {
+    width: 100%;
+    height: 4.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
 
     color:#FFFFFF;
-    background:#006341;opacity:0.7;
+    background:#006341;
+    border: none;
+    
+}
 
-    margin:0.93rem 0.62rem 0.93rem 0.62rem;
-    padding:1.12rem 5.3rem 1.25rem 5.3rem;
+
+.room-number-search form button a{
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+/* OR Section */
+
+.or{
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    color:#006341;
+
+    background-color:rgba(230, 241, 238, 0.9) ;
+    border-radius:50%;
+    box-shadow: 0 0 6px rgba(92, 78, 78, 0.4);
+
+    padding:2rem 1.8rem;
 
     position:absolute;
-    top:6.5rem;
-    right:0.2rem;
-     
+    left: 40%;
+    bottom: -2.75rem;
+
+    z-index:99;
 }
+
+
+/* Filter Search Section */
+
+.room-filter-search{
+    background-color: #006341;
+    padding: 4.5rem 2rem;
+
+}
+
+
+.room-filter-search h1 {  
+    font-size: 1.62rem;
+    font-weight: 500;
+    color:#FFFFFF;
+
+   
+    margin-bottom: 2.25rem;
+   
+}
+
+.room-filter-search form select{
+    width: 100%;
+    height: 5rem;
+    font-size: 1.5rem;
+
+    color: #ffffff;
+    background-color:  #006341;
+    border: 1px solid #ffffff;
+ 
+    padding-left:1.3rem;
+    margin-bottom: 2rem;
+
+}
+
+
+/* .room-filter-search form select option{
+    color: #ffffff;
+  
+} */
+
+.room-filter-search form button{
+    display: block;
+    width: 100%;
+    height: 4.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #333333;
+    border: none;
+
+}
+.room-filter-search form button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* Room detail-drop down */
+
+.rooms-section{
+    margin-bottom: 2rem;
+}
+
+.rooms-section h2{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    background-color: #333333;
+    padding: 2.31rem;
+
+}
+
+.accordion {
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 1.12rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+
+    transition: 0.4s;
+  }
+
+  /* .active, .accordion:hover {
+    background-color:  rgba(0, 99, 65, 0.7);
+ 
+  } */
+ 
+
+.rooms-section .room-list{
+    max-width: 82%;
+    margin: 0 auto;
+}
+
+.rooms-section .accordion{
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #333333;
+    position: relative;
+}
+
+.rooms-section .room-list:first-of-type .accordion:first-of-type{
+    margin-top: 1rem;
+}
+
+.rooms-section .accordion i{
+    color: #006341;
+    position: absolute;
+    right: 2rem;
+
+} 
+
+.rooms-section hr{
+    color: #707070;
+    margin-top: 1.31rem;
+    margin-bottom: 0;
+}
+ 
+.rooms-section .room-list:last-of-type hr:first-of-type{
+    display: none;
+} 
+
+.panel {
+    display: none;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding-bottom: 4rem;
+    }
+
+.rooms-section .panel img{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+}
+
+.rooms-section .panel h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #006341;
+    margin-top: 1.75rem;
+    margin-left: 0.5rem;
+
+} 
+ 
+.rooms-section .panel section{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr;
+
+    width:100%;
+    margin: 1.5rem 0;
+
+}
+
+
+.rooms-section .panel section:last-of-type{
+    margin-bottom: 4.5rem;
+
+}
+
+.rooms-section .panel section i{
+    display: inline;
+    color: #006341;
+    text-align: center;
+    grid-column: 1/2;
+
+
+}
+
+.rooms-section .panel section p:first-of-type{
+    display: inline;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333333;
+    margin-top: 0.4rem;
+    margin-left: 0.75rem;
+    grid-column: 2/6;
+
+} 
+
+.rooms-section .panel section p:nth-of-type(2){
+    display: inline;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+    margin-top: 0.3rem;
+    grid-column: 6/7;
+   
+}
+
+.rooms-section .panel hr{
+    margin: 0;
+}
+
+.rooms-section .panel a{
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #006341;
+    padding: 1.5rem;
+    margin: 1rem 0 1.5rem;
+}
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+
+/**********************************
+   Custom Media Query - 428px and up
+***********************************/
+
+@media only screen and (min-width:428px) {
+
+
 
 /* Progress Section-Select your room */
 
+ 
+
+
+/* Locate Room Section */
+
+
+
+/* OR Section */
+
+ 
+
+/* Filter Search Section */
+
+}
+
+
+/***************************************************
+Landscape phone and up
+***************************************************/
+@media only screen and (min-width: 480px) {
+
+   /* Filter Display Section */
+
+ 
+          
+}
+
+
+
+/* Progress Section-Select your room */
+/* 
+#Layer_1-filter{
+    width:4rem;
+    margin-left:3.2rem;
+}
+
+
 .progress-circle{
     display: grid;
-    grid-template-columns: 1fr auto;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto ;
 }
 
 .progress-icon-2{
-    display: inline-block;
-    margin: 1.84rem 1.5rem 1.84rem 1.84rem;
     grid-column: 1/2;
     grid-row: 1/4;
 
 }
 
  h2.room-select{
-    font-size: 1.37rem;
-    font-weight: 500;
-    color: #006341;
-    margin-top:2.28rem;
-    margin-right: 6.7rem;
+    font-size: 1.5rem;
+    margin-top:rem;
 
-    grid-column: 2/3;
+    grid-column: 2/4;
     grid-row: 1/3;
 
-}
+ } */
+
 
 
 /* Locate Room Section */
-
-
-.locate-room{
-    background-color: #E5EFEC;
-    padding-top: 2rem;
-}
-
-.locate-room h2{ 
-   font-size:1.37rem ;
-   font-weight:700;
-   color:#006341;
-
-   margin:0 0 1.25rem 2rem;
+/* 
+.room-number-search{
+     
+    padding-bottom: 5rem;
 }
 
 
-.locate-room p {
-    font-size:1.2rem;
-    font-style: italic;
-   
-    color:#595959;
-    border-color:#006341;
-    border-style: solid;
-    border-width:thin;
-
-    margin:0 2rem 4rem 2rem;
-    padding:1.6rem 2rem 1.75rem 1.3rem;
+h2.room-number-search{
+    font-size:1.8rem;
 }
 
+.room-number-search a {
+    padding: 1.2rem 11.2rem;
+} */
 
-.locate-room a {
-    font-size: 1.25rem;
-    font-weight: 500;
-    color:#FFFFFF;
-    background:#006341;
-    text-decoration: none;
-
-    margin: 2rem 2.5rem 10rem 1.8rem;
-    padding: 1.6rem 7.98rem;
-}
 
 /* OR Section */
-
+/* 
 .OR {
-    font-size: 1.2rem;
-   font-weight: 500;
-   color:#006341;
 
-   background-color:#E6F1EE;
-   border-radius:50%;
-   box-shadow:2px  0 0  #929796;
-   padding:0.1rem 1.3rem ;
-
-    position:absolute;
-    right:9.8rem;
-    bottom:-7.8rem;
-
-    z-index:2;
-}
-
+    right:13rem;
+    bottom:-9rem;
+  
+} */
 
 
 /* Filter Search Section */
-
-#search{
-    background-color: #006341;
-    margin-top:5rem;
-    padding:1rem;
-
-    position: relative;
-
-  
-}
-
-
+/* 
 h1.search-title {  
-    font-size:28px;
-    font-weight: 500;
-    color:#FFFFFF;
+    font-size:1.8rem;
+    margin-left:6rem;
 
-    margin: 35px 30px 8px 35px;
+} */
 
-}
-
-
-section.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-     
-  
-}
-
-
-section.item{
-    
- padding:24px 20px 12px 22px;  
-  background-color: none;
-}
-
+/* 
 .filter-category ,.filter-capacity , .filter-whiteboards,  .filter-outlets {
-    font-size: 18px;
-     text-align: left; 
-    background: #006341;
-    border-color: #FFFFFF;
-
-    color:#FFFFFF;
-}
-
-.filter-category{
-    padding:16px 130px 16px 16px;
-}
-
-.filter-capacity {
-    padding: 16px 185px 16px 16px;
-}
-
-.filter-whiteboards{
-    padding: 16px 152px 16px 16px;
-}
-
-.filter-outlets{
-    padding: 16px 195px 16px 16px;
-}
-
-option{
-    background-color: #E5EFEC;
-    color:#595959;
-    padding-bottom:1rem;
-    font-size: 1rem;
+   width:24rem;
+  margin:0 1rem;
+   
 }
 
 
+.room-filter-search a{
+    font-weight:500;
+    margin:37px 36px 60px 36px;
+    padding:1.5rem 10rem;
+   
+    }
+ */
 
-#search a{
-font-size: 20px;
-color:#FFFFFF;
-background:#333333;
-margin:37px 36px 60px 36px;
-padding:1.5rem 120px;
-text-decoration: none;
+
+   
+
+
+
+
+
+
+/**********************************
+  Portrait tablet - 768px and up
+***********************************/
+
+@media only screen and (min-width: 768px) {
+	
+
 }
 
-/* END of Filter Search Section */
+
+/**************************************
+  Landscape desktop (17”) and up 
+***************************************/
+
+@media only screen and (min-width: 960px) {
+}
+
+
+
+
+
+/**************************************
+  Widescreen desktop (24”) and up
+***************************************/
+
+@media only screen and (min-width: 1160px) {
+
+  /* Filter Display Section */
+/* 
+  h1.filter-page-title{
+
+    font-size:3rem;
+
+    margin:-10rem 0 0 0;
+    padding:25rem 27.2rem 11.3rem 27.2rem;
+
+    top:9.5rem;
+    right:0.1rem;
+          
+} */
+
+
+
+/* Progress Section-Select your room */
+/* 
+#Layer_1-filter{
+    width:4rem;
+    margin-left:3.2rem;
+} */
+
+
+
+
+
+/* OR Section */
+/* 
+.OR {
+
+    right:34.5rem;
+    bottom:-31.5rem;
+  
+} */
+
+
+}
+
+/*---------------------- Search-Page ----------------------------*/
 
 
 
