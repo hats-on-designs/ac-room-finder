@@ -49,13 +49,16 @@ header img{
     margin-bottom: -0.15rem;
 }
 
+header img:nth-of-type(2),
+footer img:nth-of-type(2){
+    display: none;
+}
 svg{
     width: 3.93rem;
 }
+/* progress-mobile section - circle version - */
 
-/* progress section - circle version - */
-
-.progress{
+.progress-mobile{
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr ; 
     grid-template-rows: 1fr; 
@@ -71,14 +74,18 @@ svg{
 
 }
 
-.progress h2{
+.progress-mobile h2{
     font-size: 1.4rem;
     font-weight: 500;
     color: #006341;
     grid-column: 2/5;
+   
+}
 
-    
-} 
+/* progress-desktop section - bar version - */
+.progress-desktop{
+    display: none;
+}
 
 
 /* ---------------Landing PAGE---------------------- */
@@ -145,8 +152,7 @@ svg{
 .status-section hr{  
     border: 1px solid #048559;
 
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin: 3rem 0;
 }
 
 .intro-about h2{
@@ -164,7 +170,6 @@ svg{
 
 /*---------------------- Login-Page ----------------------------*/
 
-
 .login{
     color: #ffffff;
     background-color: #006341;
@@ -179,6 +184,10 @@ svg{
 
 .login p{
     margin-bottom: 2.37rem;
+}
+
+.login hr {
+    display: none;
 }
 
 .login form label{
@@ -222,9 +231,8 @@ svg{
     color: #ffffff;
 }
 
-/*************************************
-           FILTER PAGE
-*************************************/
+/*------------------ FILTER PAGE -------------------------*/
+
 
 
 /* Filter Display Section */
@@ -386,13 +394,13 @@ svg{
 }
 
 
-/* Room detail-drop down */
+/* Room detail-drop down (Most viewed room / Results)*/
 
-.rooms-section{
+.rooms-section-mobile{
     margin-bottom: 2rem;
 }
 
-.rooms-section h2{
+.rooms-section-mobile h2{
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
@@ -413,43 +421,43 @@ svg{
 
     transition: 0.4s;
   }
-
-  /* .active, .accordion:hover {
+/* 
+.active, .accordion:hover {
     background-color:  rgba(0, 99, 65, 0.7);
  
-  } */
- 
+  }
+  */
 
-.rooms-section .room-list{
+.rooms-section-mobile .room-list{
     max-width: 82%;
     margin: 0 auto;
 }
 
-.rooms-section .accordion{
+.rooms-section-mobile .accordion{
     font-size: 1.75rem;
     font-weight: 500;
     color: #333333;
     position: relative;
 }
 
-.rooms-section .room-list:first-of-type .accordion:first-of-type{
+.rooms-section-mobile .room-list:first-of-type .accordion:first-of-type{
     margin-top: 1rem;
 }
 
-.rooms-section .accordion i{
+.rooms-section-mobile .accordion i{
     color: #006341;
     position: absolute;
     right: 2rem;
 
 } 
 
-.rooms-section hr{
+.rooms-section-mobile hr{
     color: #707070;
     margin-top: 1.31rem;
     margin-bottom: 0;
 }
  
-.rooms-section .room-list:last-of-type hr:first-of-type{
+.rooms-section-mobile .room-list:last-of-type hr:first-of-type{
     display: none;
 } 
 
@@ -460,13 +468,13 @@ svg{
     padding-bottom: 4rem;
     }
 
-.rooms-section .panel img{
+.rooms-section-mobile .panel img{
     width: 100%;
     margin: 0 auto;
     margin-top: 1rem;
 }
 
-.rooms-section .panel h3{
+.rooms-section-mobile .panel h3{
     font-size: 1.6rem;
     font-weight: 500;
     color: #006341;
@@ -475,7 +483,7 @@ svg{
 
 } 
  
-.rooms-section .panel section{
+.rooms-section-mobile .panel section{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: 1fr;
@@ -486,12 +494,12 @@ svg{
 }
 
 
-.rooms-section .panel section:last-of-type{
+.rooms-section-mobile .panel section:last-of-type{
     margin-bottom: 4.5rem;
 
 }
 
-.rooms-section .panel section i{
+.rooms-section-mobile .panel section i{
     display: inline;
     color: #006341;
     text-align: center;
@@ -500,7 +508,7 @@ svg{
 
 }
 
-.rooms-section .panel section p:first-of-type{
+.rooms-section-mobile .panel section p:first-of-type{
     display: inline;
     font-size: 1.4rem;
     font-weight: 400;
@@ -511,7 +519,7 @@ svg{
 
 } 
 
-.rooms-section .panel section p:nth-of-type(2){
+.rooms-section-mobile .panel section p:nth-of-type(2){
     display: inline;
     font-size: 1.4rem;
     font-weight: 400;
@@ -522,11 +530,11 @@ svg{
    
 }
 
-.rooms-section .panel hr{
+.rooms-section-mobile .panel hr{
     margin: 0;
 }
 
-.rooms-section .panel a{
+.rooms-section-mobile .panel a{
     font-size: 1.25rem;
     font-weight: 500;
     text-decoration: none;
@@ -536,209 +544,568 @@ svg{
     margin: 1rem 0 1.5rem;
 }
 
-
-
-
-
-/*MEDIA QUERIES*/
-
-
-/**********************************
-   Custom Media Query - 428px and up
-***********************************/
-
-@media only screen and (min-width:428px) {
-
-
-
-/* Progress Section-Select your room */
-
- 
-
-
-/* Locate Room Section */
-
-
-
-/* OR Section */
-
- 
-
-/* Filter Search Section */
-
-}
-
-
-/***************************************************
-Landscape phone and up
-***************************************************/
-@media only screen and (min-width: 480px) {
-
-   /* Filter Display Section */
-
- 
-          
+.rooms-section-desktop{
+    display: none;
 }
 
 
 
-/* Progress Section-Select your room */
-/* 
-#Layer_1-filter{
-    width:4rem;
-    margin-left:3.2rem;
+/*****************************************************
+LANDSCAPE TABLETS AND STANDARD DESKTOP 1024px and up
+******************************************************/
+@media only screen and (min-width: 1024px) {
+
+/* General */
+header img:first-of-type,
+footer img:first-of-type{ 
+    display: none;
+}
+
+header img:nth-of-type(2),
+footer img:nth-of-type(2){
+    display: block;
 }
 
 
-.progress-circle{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr auto ;
-}
+    article.login-page{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: auto auto;
 
-.progress-icon-2{
-    grid-column: 1/2;
-    grid-row: 1/4;
+        max-width: 85%;
+        margin: 0 auto;
+        margin-bottom: 5rem;
 
-}
-
- h2.room-select{
-    font-size: 1.5rem;
-    margin-top:rem;
-
-    grid-column: 2/4;
-    grid-row: 1/3;
-
- } */
-
-
-
-/* Locate Room Section */
-/* 
-.room-number-search{
-     
-    padding-bottom: 5rem;
-}
-
-
-h2.room-number-search{
-    font-size:1.8rem;
-}
-
-.room-number-search a {
-    padding: 1.2rem 11.2rem;
-} */
-
-
-/* OR Section */
-/* 
-.OR {
-
-    right:13rem;
-    bottom:-9rem;
-  
-} */
-
-
-/* Filter Search Section */
-/* 
-h1.search-title {  
-    font-size:1.8rem;
-    margin-left:6rem;
-
-} */
-
-/* 
-.filter-category ,.filter-capacity , .filter-whiteboards,  .filter-outlets {
-   width:24rem;
-  margin:0 1rem;
-   
-}
-
-
-.room-filter-search a{
-    font-weight:500;
-    margin:37px 36px 60px 36px;
-    padding:1.5rem 10rem;
-   
+    
     }
- */
+
+/* progress-mobile section - circle version - */
+
+    .progress-mobile{
+        display: none;
+    }
 
 
-   
+/* progress-desktop section - bar version - */
+    .progress-desktop{
+        display: block;
+        grid-column: 1/13;
+        grid-row: 1/2;
+
+    }
+
+    .progress-desktop svg{
+        display: block;
+        width: 52%;
+        margin: 3rem auto ;
+
+    }
 
 
+  /*---------------------- Landing-Page ----------------------------*/
+  article.landing-page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto;
+
+    max-width: 85%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+
+  .status-section {
+    display: inline-block;
+    padding: 2rem 4rem 3.25rem;
+    margin-left: -0.5rem;
+
+    grid-column: 7/13;
+    grid-row: 2/3;
+  }
+
+  .status-section a {
+    display: block;
+    font-size: 1.2rem;
+    padding: 1.7rem;
+    width: 100%;
+    height: 5rem;
+    background-color: #333333;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+
+    margin-bottom: 1.6em;
+  }
+
+  .status-section h3 {
+    font-weight: 500;
+    text-align: center;
+
+    margin-top: 5rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .status-section p {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+
+  .status-section hr {
+    display: block;
+    width: 100%;
+    border: 1px solid #048559;
+    margin-bottom: 4rem;
+  }
+/*---------------------- Login-Page ----------------------------*/
+
+.hero-section{
+    display: inline-block;
+    background-position: 50% 50%;
+
+    grid-column: 1/8;
+    grid-row: 2/3
+
+}
+.hero-section h1{ 
+    font-size: 1.75rem;
+    font-weight: 400;
+
+    max-width: 23rem;
+    padding: 1.5rem;
+    margin: 2rem 0 30rem;
+ 
+}
+
+.login{
+    display: inline-block;
+    padding: 2rem 4rem 3.25rem;
+    margin-left: -0.5rem;
+
+    grid-column: 8/13;
+    grid-row: 2/3
+
+}
+
+.login h3{
+    font-weight: 500;
+    text-align: center;
+
+    margin-top: 5rem;
+    margin-bottom: 1.3rem;
+}
+
+.login p{
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.login hr{
+    display: block;
+    width: 19rem;
+    border: 1px solid #048559;
+    margin-bottom: 4rem;
+    
+}
+
+.login form label{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
 
 
+.login form input{
 
+    height: 3.75rem;
+    font-size: 1.2rem;
+    font-weight: 300;
 
-/**********************************
-  Portrait tablet - 768px and up
-***********************************/
+    margin-bottom: 2.75rem;
+    padding: 1rem;
 
-@media only screen and (min-width: 768px) {
-	
+}
+
+.login .passwrd-input{
+    margin-bottom: 4rem;
+}
+
+.login form button{
+
+    height: 3.75rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+    margin-bottom: 3rem;
 
 }
 
 
-/**************************************
-  Landscape desktop (17”) and up 
-***************************************/
 
-@media only screen and (min-width: 960px) {
+
+/*-----------------search-page----------------------------------*/
+
+
+/* Filter Display Section */
+
+
+.search-page-title{
+  background: url(../images/room-finder-hero-desktop-img.png);
+  background-position: 70% 45%;
+
+
+}
+.search-page-title h1{
+  background: none;
+  margin: 12rem auto;
+
 }
 
 
+/* Locate Room Section */
 
+.room-number-search{
+  padding-bottom: 2.5rem;
+}
 
+.room-number-search form {
+  display: grid;
+  grid-template-columns: repeat(25,1fr);
+  grid-template-rows: auto auto ;
 
-/**************************************
-  Widescreen desktop (24”) and up
-***************************************/
+}
 
-@media only screen and (min-width: 1160px) {
+.room-number-search form label{
+  display:inline-block;
+  text-align: center;
+  grid-column: 9/19;
+  grid-row: 1/2;
 
-  /* Filter Display Section */
-/* 
-  h1.filter-page-title{
+}
 
-    font-size:3rem;
+.room-number-search form input#room-number{
+  display:inline-block;
 
-    margin:-10rem 0 0 0;
-    padding:25rem 27.2rem 11.3rem 27.2rem;
+  grid-column: 6/13;
+  grid-row: 2/3;
+ padding-bottom:1.6rem;
 
-    top:9.5rem;
-    right:0.1rem;
-          
-} */
+}
 
+.room-number-search form button{
+  display:inline-block;
 
+  grid-column: 14/22;
+  grid-row: 2/3; 
 
-/* Progress Section-Select your room */
-/* 
-#Layer_1-filter{
-    width:4rem;
-    margin-left:3.2rem;
-} */
-
-
-
+  margin-top:2rem;
+  margin-left:-1rem;
+}
 
 
 /* OR Section */
-/* 
-.OR {
 
-    right:34.5rem;
-    bottom:-31.5rem;
-  
-} */
+.or{
+  font-size:1.2rem;
+
+  left: 46%;
+  bottom: -2.6rem;
+
+}
+
+/* Filter Search Section */
+
+.room-filter-search{
+  padding-bottom:0.5rem;
+}
+
+.room-filter-search form {
+  display: grid;
+
+  grid-template-columns: repeat(51,1fr);
+  grid-template-rows: auto auto ;
+
+
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.room-filter-search form label{
+  display: inline-block;
+  font-size:1.5rem;
+  text-align: center;
+
+  grid-column: 15/38; 
+  grid-row: 1/2; 
+
+  margin-bottom: 0.25rem; 
+  margin-top:0.5rem;
+
+}
+
+
+.room-filter-search form select{
+ font-size:1.1rem;
+  height:3.5rem;
+
+  padding-left:0.5rem;
+}
+
+.room-filter-search form select#category{
+  display: inline-block;
+
+  grid-column: 1/13;
+  grid-row: 2/5;
 
 
 }
 
-/*---------------------- Search-Page ----------------------------*/
+
+.room-filter-search form select#capacity{
+  display: inline-block;
+
+  grid-column: 14/26;
+  grid-row: 3/5;
+
+}
+
+
+.room-filter-search form select#whiteboards{
+  display: inline-block;
+
+  grid-column: 27/40;
+  grid-row: 3/5;
+
+}
+
+
+.room-filter-search form select#outlets{
+  display: inline-block;
+
+  grid-column: 41/52;
+  grid-row: 3/5;
+
+}
+
+.room-filter-search form button  {
+  display: inline-block; 
+
+  grid-column: 20/32;
+  grid-row:6/7;
+
+  margin-top:1rem; 
+  height:4rem;
+
+}  
+  /* --- */
 
 
 
+.rooms-section-mobile{
+    display: none;
+  }
+    
+  .rooms-section-desktop{
+    display: block;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  
+  }
+  
+  .rooms-section-desktop h2{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #006341;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  
+  }
+  
+  .rooms-section-desktop .list-labels{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    
+  }
+  
+  .rooms-section-desktop .list-labels h3{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #333333;
+  
+  }
+  /* Image */
+  .rooms-section-desktop .list-labels h3:first-of-type{
+    grid-column: 1/3;
+  }
+  /* Room */
+  .rooms-section-desktop .list-labels h3:nth-of-type(2){
+    grid-column:  3/5;
+    text-align: center;
+  }
+  /* Building */
+  .rooms-section-desktop .list-labels h3:nth-of-type(3){
+    grid-column:  5/6;
+    text-align: center;
+  }
+  /* Type */
+  .rooms-section-desktop .list-labels h3:nth-of-type(4){
+    grid-column:  7/9;
+    text-align: center;
+  }
+  /* Outlets */
+  .rooms-section-desktop .list-labels h3:nth-of-type(5){
+    grid-column:  9/10;
+  
+  }
+  /* Capacity */
+  .rooms-section-desktop .list-labels h3:nth-of-type(6){
+    grid-column:  10/12;
+    text-align: center;
+  }
+  /* Projector */
+  .rooms-section-desktop .list-labels h3:nth-of-type(7){
+    grid-column:  12/13;
+    
+  }
+  
+  .rooms-section-desktop hr:first-of-type{
+    margin: 1rem 0;
+  }
+  
+  .rooms-section-desktop .room-detail{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 0.5rem;
+  
+  }
+  /* Image - info */
+  .rooms-section-desktop .room-detail a:first-of-type{
+    grid-column: 1/3;
+    grid-row: 1/4 ;
+  
+  }
+  /* Room number - info */
+  .rooms-section-desktop .room-detail a:nth-of-type(2){
+    grid-column: 3/5;
+    grid-row: 2/3;
+  
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color:#006341;
+   
+  
+  }
+  /* Building - info */
+  .rooms-section-desktop .room-detail p:first-of-type{
+    grid-column: 5/6;
+    grid-row: 2/3;
+    text-align: center;
+  
+  }
+  /* Room Type - info */
+  .rooms-section-desktop .room-detail p:nth-of-type(2){
+    grid-column: 7/9;
+    grid-row: 2/3;
+    text-align: center;
+  
+  }
+  /* Outlets - info */
+  .rooms-section-desktop .room-detail p:nth-of-type(3){
+    grid-column: 9/10;
+    grid-row: 2/3;
+  
+  
+  }
+  /* Capacity - info */
+  .rooms-section-desktop .room-detail p:nth-of-type(4){
+    grid-column: 10/12;
+    grid-row: 2/3;
+    text-align: center;
+  
+  }
+  /* Projector - info */
+  .rooms-section-desktop .room-detail p:nth-of-type(5){
+    grid-column: 12/13;
+    grid-row: 2/3;
+    text-align: center;
+  
+  }
+  
+  /* View detail - anchor tag*/
+  .rooms-section-desktop .room-detail a:last-of-type{
+    grid-column: 11/13;
+    grid-row: 3/4;
+  
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color:#006341;
+    margin-top: 0.5rem;
+  
+  }
+
+  .rooms-section-desktop a.load-more{
+      display: block;
+      width: 13rem;
+      font-size: 1.2;
+      font-weight: 400;
+      text-align: center;
+      text-decoration: none;
+      color: #ffffff;
+      background-color:#006341;
+      margin: 3rem auto;
+      padding: 1.25rem;
+
+     }
+  
+  
+}
+
+
+/*****************************************************
+LANDSCAPE TABLETS AND STANDARD DESKTOP 1360px and up
+******************************************************/
+@media only screen and (min-width: 1360px) {
+  /*---------------------- Landing-Page ----------------------------*/
+  article.landing-page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+
+  .status-section {
+    display: inline-block;
+    padding: 2rem 4rem 3.25rem;
+    margin-left: -0.5rem;
+
+    grid-column: 8/13;
+    grid-row: 2/3;
+  }
+
+  .status-section h3 {
+    font-weight: 500;
+    text-align: center;
+
+    margin-top: 5rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .status-section p {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+
+  .status-section hr {
+    display: block;
+    width: 100%;
+    border: 1px solid #048559;
+    margin-bottom: 4rem;
+  }
+}

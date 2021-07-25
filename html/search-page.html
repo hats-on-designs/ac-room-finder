@@ -29,19 +29,17 @@
     <header>
         <!-- The screen shots is here only for demonstration at the final project - devlopers will have to add the COPIED CODE For Algonquin College header -->
         <img src="../images/header-screen-shot-mobile.jpg" alt="header-screen-shot-mobile">
-        <!-- <img src="images/header-screen-shot-desktop.jpg" alt="header-screen-shot-desktop"> -->
+        <img src="../images/header-screen-shot-desktop.png" alt="header-screen-shot-desktop">
     </header>
     <main>
-
-
         <article>
             <!-- Filter Page title section -->
             <section class="search-page-title">
                 <h1>Room Search</h1>
             </section>
 
-            <!-- Progress Icon - Select Room title-->
-            <section class="progress">
+            <!-- Progress bar -step 2 - Select Room title-->
+            <section class="progress-mobile">
                 <section class="progress-icon">
                     <svg id="Layer_1-filter" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 64.3151 63.6651">
@@ -106,9 +104,114 @@
                 <h2>Select your room</h2>
             </section>
 
+            <section class="progress-desktop">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 869.5 129.5">
+                    <defs>
+                        <style>
+                            .cls-1-e,
+                            .cls-2-e,
+                            .cls-3-e,
+                            .cls-9-e {
+                                fill: #fff;
+                            }
+
+                            .cls-1-e,
+                            .cls-2-e,
+                            .cls-4-e,
+                            .cls-5-e {
+                                stroke: #006341;
+                            }
+
+                            .cls-1-e {
+                                stroke-width: 5px;
+                                stroke-dasharray: 16 0;
+                            }
+
+                            .cls-2-e,
+                            .cls-3-e,
+                            .cls-4-e,
+                            .cls-5-e {
+                                stroke-linecap: round;
+                            }
+
+                            .cls-2-e,
+                            .cls-4-e,
+                            .cls-5-e,
+                            .cls-8-e {
+                                stroke-width: 4px;
+                            }
+
+                            .cls-2-e {
+                                stroke-dasharray: 16;
+                            }
+
+                            .cls-3-e,
+                            .cls-8-e {
+                                stroke: #43b049;
+                            }
+
+                            .cls-3-e {
+                                stroke-width: 7px;
+                            }
+
+                            .cls-4-e,
+                            .cls-5-e {
+                                fill: none;
+                            }
+
+                            .cls-5-e {
+                                stroke-dasharray: 15;
+                            }
+
+                            .cls-6-e,
+                            .cls-7-e {
+                                isolation: isolate;
+                            }
+
+                            .cls-7-e {
+                                font-size: 31px;
+                                fill: #023328;
+                                font-family: Roboto-Bold, Roboto;
+                                font-weight: 700;
+                            }
+
+                            .cls-8-e {
+                                fill: #43b049;
+                            }
+                        </style>
+                    </defs>
+                    <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                            <g id="Group_116" data-name="Group 116">
+                                <circle id="Ellipse_2" data-name="Ellipse 2" class="cls-1-e" cx="32.5" cy="94" r="30" />
+                                <circle id="Ellipse_4" data-name="Ellipse 4" class="cls-2-e" cx="837.5" cy="94"
+                                    r="30" />
+                                <circle id="Ellipse_3" data-name="Ellipse 3" class="cls-3-e" cx="435.5" cy="95.5"
+                                    r="30.5" />
+                                <line id="Line_15" data-name="Line 15" class="cls-4-e" x1="77.8" y1="94.5" x2="389.9"
+                                    y2="94.5" />
+                                <path id="Path_18" data-name="Path 18" class="cls-5-e" d="M480.3,94.8H792.4" />
+                                <g id="_1" data-name=" 1" class="cls-6-e"><text class="cls-7-e"
+                                        transform="translate(23.5 105)">1</text></g>
+                                <g id="_2" data-name=" 2" class="cls-6-e"><text class="cls-7-e"
+                                        transform="translate(425.5 105)">2</text></g>
+                                <g id="_3" data-name=" 3" class="cls-6-e"><text class="cls-7-e"
+                                        transform="translate(828.5 105)">3</text></g>
+                                <g id="Group_1" data-name="Group 1">
+                                    <path id="Path_3" data-name="Path 3" class="cls-8-e"
+                                        d="M434,2a15.6,15.6,0,0,1,15.6,15.5c0,8.6-15.5,30.2-15.6,30s-15.5-21.4-15.5-30A15.6,15.6,0,0,1,434,2Z" />
+                                    <ellipse id="Ellipse_5" data-name="Ellipse 5" class="cls-9-e" cx="433.8" cy="17.5"
+                                        rx="9" ry="8.5" />
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </section>
+
             <!-- Room number search section -->
             <section class="room-number-search">
-                
+
                 <form action="" method="">
                     <label for="room-number">Know your room number?</label>
                     <input type="text" id="room-number" placeholder="Example CA101" name="room-number">
@@ -126,52 +229,49 @@
 
             </section>
 
-
-
-
             <!-- Search Section with filter options -->
             <section class="room-filter-search">
-                
+
                 <form action="" method="">
                     <label for="">Find the room based on your needs</label>
-                        <select id="category" name="category">
-                            <option selected disabled hidden >Category</option>
-                            <option value="Lecture">Lecture</option>
-                            <option value="Collaborative">Collaborative</option>
-                            <option value="Specialized-Lab">Specialized Lab</option>
-                            <option value="Studio">Studio</option>
-                        </select>
-                    
-                        <select id="capacity" name="capacity" >
-                            <option class="capacity" selected disabled hidden>Capacity</option>
-                            <option value="12">12 Seats</option>
-                            <option value="20">20 Seats</option>
-                            <option value="23">23 Seats</option>
-                            <option value="25">25 Seats</option>
-                            <option value="32">32 Seats</option>
-                            <option value="40">40 Seats</option>
-                        </select>
+                    <select id="category" name="category">
+                        <option selected disabled hidden>Category</option>
+                        <option value="Lecture">Lecture</option>
+                        <option value="Collaborative">Collaborative</option>
+                        <option value="Specialized-Lab">Specialized Lab</option>
+                        <option value="Studio">Studio</option>
+                    </select>
 
-                        <select id="whiteboards" name="whiteboards">
-                            <option selected disabled hidden>Whiteboards</option>
-                            <option value="1">1 Whiteboard</option>
-                            <option value="2">2 Whiteboards</option>
-                            <option value="3">3 Whiteboards</option>
-                            <option value="4">4 Whiteboards</option>
-                            <option value="5">5 Whiteboards</option>
-                        </select>
+                    <select id="capacity" name="capacity">
+                        <option class="capacity" selected disabled hidden>Capacity</option>
+                        <option value="10-20 Seats">10-20 Seats</option>
+                        <option value="20-30 Seats">20-30 Seats</option>
+                        <option value="30-40 Seats">30-40 Seats</option>
+                        <option value="40-50 Seats">40-50 Seats</option>
+                        <option value="50-60 Seats">50-60 Seats</option>
+                        <option value="60-70 Seats">60-70 Seats</option>
+                    </select>
 
-                        <select id="outlets" name="outlets" >
-                            <option selected disabled hidden>Outlets</option>
-                            <option value="06">06 Outlets</option>
-                            <option value="10">10 Outlets</option>
-                            <option value="18">18 Outlets</option>
-                            <option value="24">24 Outlets</option>
-                            <option value="30">30 Outlets</option>
-                        </select>
+                    <select id="whiteboards" name="whiteboards">
+                        <option selected disabled hidden>Whiteboards</option>
+                        <option value="1">1 Whiteboard</option>
+                        <option value="2">2 Whiteboards</option>
+                        <option value="3">3 Whiteboards</option>
+                        <option value="4">4 Whiteboards</option>
+                        <option value="5">5 Whiteboards</option>
+                    </select>
+
+                    <select id="outlets" name="outlets">
+                        <option selected disabled hidden>Outlets</option>
+                        <option value="05-10 Outlets">05-10 Outlets</option>
+                        <option value="10-15 Outlets">10-15 Outlets</option>
+                        <option value="15-20 Outlets">15-20 Outlets</option>
+                        <option value="20-25 Outlets">20-25 Outlets</option>
+                        <option value="25-30 Outlets">25-30 Outlets</option>
+                    </select>
 
                     <button type="submit">
-                        <a href="#results">Search</a>
+                        <a href="results-page.html">Search</a>
                     </button>
                 </form>
 
@@ -180,19 +280,18 @@
 
 
         </article>
-
         <article>
-            <section class="rooms-section">
+            <section class="rooms-section-mobile">
                 <h2>Most Viewed Rooms</h2>
 
                 <section class="room-list">
-                    <button class="accordion">A 154 <i class="fas fa-chevron-right"></i>
+                    <button class="accordion">A 150 <i class="fas fa-chevron-right"></i>
                         <hr>
                     </button>
                     <section class="panel">
 
-                        <img src="../images/rooms-images/a154/a154_student_view_img.jpg"
-                            alt="Photo of room A154 - student view">
+                        <img src="../images/rooms-images/a150/a150_student_view_img.jpg"
+                            alt="Photo of room A150 - student view">
                         <h3>Studio Room</h3>
 
                         <section>
@@ -410,15 +509,119 @@
                 </section>
 
 
-
             </section>
 
+            <section class="rooms-section-desktop">
+                <h2>Most Viewed Rooms</h2>
+                <section class="list-labels">
+                    <h3>Image</h3>
+                    <h3>Room</h3>
+                    <h3>Building</h3>
+                    <h3>Type</h3>
+                    <h3>Outlets</h3>
+                    <h3>Capacity</h3>
+                    <h3>Projectors</h3>
+                </section>
+                <hr>
+                <section class="room-detail">
+                    <a href="">
+                        <img src="../images/rooms-images/a154/a154_student_view_img.jpg"
+                            alt="Photo of room A154 - student view">
+                    </a>
+                    <a href="">A 154</a>
+                    <p>A Building</p>
+                    <p>Studio Room</p>
+                    <p>23</p>
+                    <p>20</p>
+                    <p>2</p>
+
+                    <a href="#">View Details</a>
+
+                </section>
+                <hr>
+                <section class="room-detail">
+                    <a href="">
+                        <img src="../images/rooms-images/a150/a150_student_view_img.jpg"
+                            alt="Photo of room A150 - student view">
+                    </a>
+                    <a href="">A 150</a>
+                    <p>A Building</p>
+                    <p>Studio Room</p>
+                    <p>23</p>
+                    <p>20</p>
+                    <p>2</p>
+
+                    <a href="#">View Details</a>
+                </section>
+                <hr>
+                <section class="room-detail">
+                    <a href="">
+                        <img src="../images/rooms-images/b170/b170_student_view_img.jpg"
+                            alt="Photo of room b170 - student view">
+                    </a>
+                    <a href="">B 170 </a>
+                    <p>B Building</p>
+                    <p>Studio Room</p>
+                    <p>23</p>
+                    <p>20</p>
+                    <p>2</p>
+
+                    <a href="#">View Details</a>
+                </section>
+                <hr>
+                <section class="room-detail">
+                    <a href="">
+                        <img src="../images/rooms-images/b185/b185_side_view_img.jpg"
+                            alt="Photo of room B185- side view">
+                    </a>
+                    <a href="">B 185</a>
+                    <p>B Building</p>
+                    <p>Studio Room</p>
+                    <p>23</p>
+                    <p>20</p>
+                    <p>2</p>
+
+                    <a href="#">View Details</a>
+                </section>
+                <hr>
+                <section class="room-detail">
+                    <a href="">
+                        <img src="../images/rooms-images/a150/a150_student_view_img.jpg"
+                            alt="Photo of room CA150 - student view ">
+                    </a>
+                    <a href="">CA 150</a>
+                    <p>ACCE Building</p>
+                    <p>Studio Room</p>
+                    <p>23</p>
+                    <p>20</p>
+                    <p>2</p>
+
+                    <a href="#">View Details</a>
+                </section>
+                <hr>
+                <section class="room-detail">
+                    <a href="">
+                        <img src="../images/rooms-images/c150/c150_side_view_img.jpg"
+                            alt="Photo of room C150 - side view ">
+                    </a>
+                    <a href="">C 150</a>
+                    <p>B Building</p>
+                    <p>Studio Room</p>
+                    <p>23</p>
+                    <p>20</p>
+                    <p>2</p>
+
+                    <a href="#">View Details</a>
+                </section>
+                <a href="" class="load-more">Load More</a>
+            </section>
         </article>
 
     </main>
     <footer>
         <!-- The screen shots is here only for demonstration at the final project - devlopers will have to add the COPIED CODE For Algonquin College footer -->
         <img src="../images/footer-screen-shot-mobile.jpg" alt="footer-screen-shot-mobile">
+        <img src="../images/footer-screen-shot-desktop.png" alt="footer-screen-shot-desktop">
     </footer>
 
 
