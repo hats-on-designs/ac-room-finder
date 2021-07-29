@@ -237,7 +237,8 @@ svg{
 
 /* Filter Display Section */
 
-.search-page-title{
+.search-page-title,
+.room-welcome-section{
     overflow: hidden;
     background: url(../images/room-finder-hero-img.jpg);
     background-size: cover;
@@ -246,7 +247,8 @@ svg{
 
 }
 
-.search-page-title h1{
+.search-page-title h1,
+.room-welcome-section h1{
     font-size: 2.37rem;
     font-weight: 600;
     line-height: 3.12rem;
@@ -549,6 +551,275 @@ svg{
 }
 
 
+/**************** ROOM PAGE *********************/
+
+
+/*------------ Map Buttons------------- */
+.detail-page article a {
+  display: block;
+  margin: auto;
+  font-size: 1.4rem;
+  padding: 1.7rem;
+  width: 22rem;
+  height: 5rem;
+  border: 1px solid #006341;
+  text-align: center;
+  color: #006341;
+  text-decoration: none;
+  margin-bottom: 1.6em;
+}
+
+.detail-page article a:hover {
+  background-color: #006341;
+  color: #ffff;
+}
+
+/* ---------------Feature Section---------------------- */
+
+.feature .container,
+.amenities .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-row-gap: 4rem;
+  /* margin: 1.6rem; */
+  margin-left: 0rem;
+  grid-row-gap: 3.5rem;
+}
+
+section.feature_icon,
+section.amenities_icon {
+  text-align: center;
+}
+
+.feature-title h1 {
+  background-color: #006341;
+  padding: 1.5rem;
+  color: #ffff;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.feature-title h2,
+.amenities-title h2 {
+  display: block;
+  margin-bottom: 1rem;
+  color: #006341;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+.feature_icon i,
+.amenities_icon i {
+  background-color: #ffff;
+  color: #006341;
+  padding: 1.2rem;
+  border-radius: 50%;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.feature_icon h3,
+.amenities_icon h3 {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.feature p,
+.amenities p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+hr {
+  width: 87%;
+  margin: 2.5rem auto 2.5rem;
+  border: solid 1px #e4e4e4;
+}
+
+
+ .room-welcome-section img {
+  position:relative;
+}
+
+.room-welcome-section h1 {
+  font-size:1.87rem;
+  font-weight:500;
+  line-height: 3.12rem;
+  text-align: center;
+
+  margin-left:1rem;
+  margin-right:1rem;
+  padding:1rem 5.3rem ; 
+
+  position: absolute;
+  left:0;
+  right:0;
+  top: 18.9rem; 
+ 
+  color: #ffffff;
+  background-color:  rgba(0, 99, 65, 0.7);
+}
+
+.progress-3{
+  display: flex;
+}
+
+.progress-icon{
+  display: inline-block;
+  margin: 1.84rem 1.5rem 1.84rem 1.84rem;
+
+}
+
+.progress-3 h2 {
+  display:inline-block;
+  font-size: 1.37rem;
+  font-weight: 500;
+  line-height:1.5rem;
+
+  color: #006341;
+   
+   margin-top:2rem;
+   margin-right:6rem;
+
+
+}
+
+
+/* Room Specification Section */
+
+.room-specification {
+  background-color: #2B8367;
+  color:  #ffffff;
+  line-height:1.8rem;
+  padding:2rem; 
+
+}
+
+
+.room-specification h2 {
+  font-size: 1.5rem;
+  font-weight:700;
+
+  margin-bottom:1.5rem;
+}
+
+
+.room-specification hr {
+ opacity:25%;
+
+}
+
+.room-specification h3{
+  font-size:1.4rem;
+  font-weight: 600;
+
+  margin-top:2rem;
+}
+
+
+.room-specification p {
+  font-size: 1.2rem;
+  font-weight:400 ;
+  line-height:2.2rem;
+  margin-top:0.4rem;
+}
+
+
+/* Room Layout */
+
+.room-layout h2 {
+  font-size: 1.5rem;
+  font-weight:700;
+
+  margin:2rem;
+  color:#006341;
+}
+
+
+.room-layout hr {
+  margin:0 2rem;
+}
+
+
+/* Slider Plugin */
+
+.splide__slide img {
+  padding:0 3rem;
+}
+
+.splide__slide p {
+  margin:1rem 3rem 3rem;
+}
+
+button.splide__pagination__page{
+  background:#707070;
+  opacity:100%;
+}
+
+.splide__pagination__page.is-active{
+  background:#006341;
+}
+
+/* Facility and Support */
+
+
+.facility-support h2{
+  font-size: 1.5rem;
+  font-weight:600;
+
+  margin:3rem 2rem 1rem;
+  color:#006341;
+}
+
+
+.facility-support p {
+  font-size: 1.2rem;
+  font-weight:400;
+  line-height:2.2rem;
+  margin:0.4rem 2rem 3rem;
+  color:#333333;
+}
+
+.facility-support ul{
+margin: 0 2rem  3rem;
+
+}
+
+.facility-support ul li {
+ list-style: disc;
+
+ font-family: roboto, arial narow, arial, sans-serif;
+ font-size: 1.2rem;
+ font-weight:400;
+
+ line-height: 2.2rem;
+ margin:1rem 2rem;
+ padding-left: 0.5rem;
+ 
+}
+
+.facility-support ul li::marker{
+  font-size: 1.5rem;
+  color:#006341;
+
+}
+
+.facility-support h3{
+  font-size: 1.2rem;
+  font-weight:500;
+  
+   line-height: 2.2rem;
+  margin:3rem 2rem 1rem;
+  color:#006341;
+}
+
+ul.pointers li{
+  font-weight: 450;
+}
+
+
 
 /*****************************************************
 LANDSCAPE TABLETS AND STANDARD DESKTOP 1024px and up
@@ -749,13 +1020,15 @@ footer img:nth-of-type(2){
 /* Filter Display Section */
 
 
-.search-page-title{
+.search-page-title,
+.room-welcome-section{
   background: url(../images/room-finder-hero-desktop-img.png);
   background-position: 70% 45%;
 
 
 }
-.search-page-title h1{
+.search-page-title h1,
+.room-welcome-section h1{
   background: none;
   margin: 12rem auto;
 
